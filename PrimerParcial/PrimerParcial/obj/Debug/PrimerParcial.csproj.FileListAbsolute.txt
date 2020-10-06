@@ -1,0 +1,16 @@
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\bin\Debug\PrimerParcial.exe.config
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\bin\Debug\PrimerParcial.exe
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\bin\Debug\PrimerParcial.pdb
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\bin\Debug\Entidades.dll
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\bin\Debug\Entidades.pdb
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.csprojAssemblyReference.cache
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.Properties.Resources.resources
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.csproj.GenerateResource.cache
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.csproj.CoreCompileInputs.cache
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.csproj.CopyComplete
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.exe
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.pdb
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.FormComprar.resources
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.FormBienvenida.resources
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.FrmInicioCliente.resources
+C:\Users\chave\Source\Repositorios\PrimerParcial\PrimerParcial\obj\Debug\PrimerParcial.FrmNuevoCliente.resources
