@@ -57,7 +57,7 @@
             this.btnAceptar.Location = new System.Drawing.Point(61, 176);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(140, 23);
-            this.btnAceptar.TabIndex = 4;
+            this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -90,7 +90,7 @@
             this.lblUsuario.Location = new System.Drawing.Point(58, 46);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(50, 13);
-            this.lblUsuario.TabIndex = 7;
+            this.lblUsuario.TabIndex = 3;
             this.lblUsuario.Text = "Usuario";
             // 
             // lblContrasenia
@@ -101,15 +101,14 @@
             this.lblContrasenia.Location = new System.Drawing.Point(58, 85);
             this.lblContrasenia.Name = "lblContrasenia";
             this.lblContrasenia.Size = new System.Drawing.Size(71, 13);
-            this.lblContrasenia.TabIndex = 8;
+            this.lblContrasenia.TabIndex = 4;
             this.lblContrasenia.Text = "Contraseña";
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.BackgroundImage = global::PrimerParcial.Properties.Resources.kwik;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(289, 239);
             this.Controls.Add(this.lblContrasenia);
             this.Controls.Add(this.lblUsuario);

@@ -1,0 +1,9 @@
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\bin\Debug\netstandard2.0\Excepciones.deps.json
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\bin\Debug\netstandard2.0\Excepciones.dll
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\bin\Debug\netstandard2.0\Excepciones.pdb
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.csprojAssemblyReference.cache
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfoInputs.cache
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.AssemblyInfo.cs
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.dll
+C:\Users\chave\Source\Repositorios\Parciales\PrimerParcial\Excepciones\obj\Debug\netstandard2.0\Excepciones.pdb

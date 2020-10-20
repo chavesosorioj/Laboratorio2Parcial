@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Validaciones
+    public static class Validaciones
     {
         /// <summary>
         /// verifica que la cadena de caracter recibida sea numerica
@@ -30,6 +30,56 @@ namespace Entidades
 
             return ret;
         }
+        /// <summary>
+        /// Valida que la cadena ingresada sea numerica y mayor a cero
+        /// </summary>
+        /// <param name="strNum"></param>
+        /// <returns></returns>
+        public static bool NumMayorACero(string strNum)
+        {
+            bool ret = false;
+            if(EsNumerico(strNum))
+            {
+                int.TryParse(strNum, out int auxNum);
+                if (auxNum > 0)
+                    ret = true;
+            }
+                return ret;
+        }
+        /*
+        public static bool VerificarNombreApellido(object sender)
+        {
+            bool ret = false;
+
+            if(Validaciones.ContieneLetras(((TextBox)sender).Text))
+            {
+                 ((TextBox)sender).Text = ((TextBox)sender).Text.Trim();
+                 ((TextBox)sender).Text = ((TextBox)sender).Text.ToLower();
+
+                if (((TextBox)sender).Text.Length > 1)
+                {
+                    ((TextBox)sender).Text = Char.ToUpper(((TextBox)sender).Text[0]) + ((TextBox)sender).Text.Substring(1);
+
+                    int posicion = 1;
+                    while (((TextBox)sender).Text.IndexOf(' ', posicion) > 0)
+                    {
+                        posicion = ((TextBox)sender).Text.IndexOf(' ', posicion);
+                        ((TextBox)sender).Text = String.Concat(
+                             ((TextBox)sender).Text.Substring(0, posicion + 1),
+                            
+                            Char.ToUpper(((TextBox)sender).Text[posicion + 1]),
+                            
+                            ((TextBox)sender).Text.Substring(posicion + 2));
+
+                        posicion++;
+                    }
+
+                }
+            }
+            return ret;
+                 
+        }
+        */
 
         /// <summary>
         /// Verifica la cadena recibida contenga letras

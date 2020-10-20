@@ -20,10 +20,6 @@ namespace PrimerParcial
         private void FrmInicioCliente_Load(object sender, EventArgs e)
         {
             this.Text = "Bienvenido!";
-            this.txtBUsuario.Text = "Nombre Usuario";
-            this.txtBContraseña.Text = "Constraseña";
-            this.lblAdmin2.Text = "admin";
-            this.lblAdmin1.Text = "admin";
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

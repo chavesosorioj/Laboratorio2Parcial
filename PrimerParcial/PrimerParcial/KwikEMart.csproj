@@ -61,17 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormComprar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormComprar.Designer.cs">
-      <DependentUpon>FormComprar.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBienvenida.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmBienvenida.Designer.cs">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompra.Designer.cs">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmComprasEmpleados.cs">
       <SubType>Form</SubType>
@@ -79,17 +79,17 @@
     <Compile Include="FrmComprasEmpleados.Designer.cs">
       <DependentUpon>FrmComprasEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDiezProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiezProductos.Designer.cs">
+      <DependentUpon>FrmDiezProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmEmpleado.Designer.cs">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmIngresaCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmIngresaCliente.Designer.cs">
-      <DependentUpon>FrmIngresaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -97,34 +97,70 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMostrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarCliente.Designer.cs">
+      <DependentUpon>FrmMostrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMostrarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarEmpleado.Designer.cs">
+      <DependentUpon>FrmMostrarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNuevoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmNuevoCliente.Designer.cs">
       <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNuevoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoEmpleado.Designer.cs">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoProducto.Designer.cs">
+      <DependentUpon>FrmNuevoProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormComprar.resx">
-      <DependentUpon>FormComprar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompra.resx">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmComprasEmpleados.resx">
       <DependentUpon>FrmComprasEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiezProductos.resx">
+      <DependentUpon>FrmDiezProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEmpleado.resx">
       <DependentUpon>FrmEmpleado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresaCliente.resx">
-      <DependentUpon>FrmIngresaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarCliente.resx">
+      <DependentUpon>FrmMostrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarEmpleado.resx">
+      <DependentUpon>FrmMostrarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmNuevoCliente.resx">
       <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoEmpleado.resx">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoProducto.resx">
+      <DependentUpon>FrmNuevoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,6 +189,10 @@
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{df9f1ea8-65c6-4740-86ed-1582873ed391}</Project>
       <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{e74f36a1-450e-40d5-8cbe-59e4a1ec7669}</Project>
+      <Name>Excepciones</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

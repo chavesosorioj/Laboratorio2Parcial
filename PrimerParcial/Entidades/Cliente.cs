@@ -10,7 +10,6 @@ namespace Entidades
     public class Cliente : Persona
     {
         #region Atributos
-        public int contrasenia;
         public string domicilio;
         public string descuento;
         List<Compra> listaCompra;
@@ -18,13 +17,7 @@ namespace Entidades
 
         #region Propiedades
 
-       public int Constrasenia
-        {
-            get { return contrasenia;}
-            set { contrasenia = value;}
-        }
-
-        public string Descuento 
+         public string Descuento 
         {
             get { return descuento; }
             set { descuento = value; }
@@ -33,11 +26,10 @@ namespace Entidades
         #endregion
 
         #region Constructores
-        public Cliente(string nombre, string apellido, int dni,string dom, int contr, string desc) : base(nombre, apellido, dni)
+        public Cliente(string nombre, string apellido, int dni,string dom,string desc) : base(nombre, apellido, dni)
         {
             this.domicilio = dom;
-           this.contrasenia = contr;
-            this.descuento = desc;
+             this.descuento = desc;
             listaCompra = new List<Compra>();
         }
 
@@ -53,6 +45,40 @@ namespace Entidades
 
             return sb.ToString();
         }
+        #endregion
+
+        #region Sobrecarga operadores
+
+        public static bool operator +(List<Cliente> listaCliente, Cliente cliente) 
+        {
+            bool ret = false;
+           if(cliente is Cliente)
+            {
+                listaCliente.Add(cliente);
+                ret = true;
+            }
+            return ret;
+        }
+
+        public static bool operator ==(List<Cliente> listaClientes, Cliente cliente)
+        {
+            bool ret= false;
+            foreach (Cliente item in listaClientes)
+            {
+                if (item.dni == cliente.dni)
+                {
+                    ret = true;
+                    break;
+                }
+            }
+            return ret;
+        }
+
+        public static bool operator !=(List<Cliente> listaClientes, Cliente cliente)
+        {
+            return !(listaClientes == cliente);
+        }
+
         #endregion
     }
 }

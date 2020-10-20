@@ -6,45 +6,6 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public enum EProductos
-    {
-        leche,
-        jugo,
-        agua,
-        cafe,
-        yerba,
-        fideos,
-        azucar,
-        arvejas,
-        porotos,
-        lentejas,
-        galletitas,
-        gelatina,
-        cereal,
-        pate,
-        arroz,
-        harina,
-        manteca,
-        yogurt,
-        huevos,
-        aceite,
-        vinagre,
-        mayonesa,
-        carne,
-        pollo,
-        salchichas,
-        deterjente,
-        lavandina,
-        esponja,
-        desodorante,
-        shampoo,
-        acondicionador,
-        manzana,
-        banana,
-        pera,
-        tomate
-     }
-
     public enum EDescuento
     {
         Homero,
@@ -53,13 +14,6 @@ namespace Entidades
         Lisa,
         Maggie,
         SinDescuento
-    }
-
-    public enum EPuesto
-    {
-        Cajero,
-        Limpieza,
-        Repositor
     }
 
     public enum ETipoProducto

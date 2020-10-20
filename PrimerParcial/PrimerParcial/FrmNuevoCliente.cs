@@ -14,17 +14,6 @@ namespace PrimerParcial
 {
     public partial class FrmNuevoCliente : Form
     {
-        #region Atributo
-        private Cliente cliente;
-        #endregion
-
-        #region Propiedad
-        public Cliente Cliente
-        {
-            get { return this.cliente; }
-            set { this.cliente = value; }
-        }
-        #endregion
         public FrmNuevoCliente()
         {
             InitializeComponent();
@@ -37,20 +26,19 @@ namespace PrimerParcial
 
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
-            if(Validaciones.ContieneLetras(this.txtNombreCliente.Text) && Validaciones.ContieneLetras(this.txtApellidoCliente.Text) && 
-                Validaciones.EsNumerico(this.txtDniCliente.Text) && Validaciones.EsNumerico(this.txtContraseñaCliente.Text)
-                && Validaciones.VerificaDomicilio(txtBoxDomicilio.Text))
+            if(!(Validaciones.ContieneLetras(this.txtNombreCliente.Text) && Validaciones.ContieneLetras(this.txtApellidoCliente.Text) && 
+                Validaciones.EsNumerico(this.txtDniCliente.Text) && Validaciones.VerificaDomicilio(txtBoxDomicilio.Text)))
             {
                 int.TryParse(txtDniCliente.Text, out int auxDni);
-                int.TryParse(txtContraseñaCliente.Text, out int auxContrasenia);
                 string desc = Validaciones.ConSinDescuento(txtNombreCliente.Text);
-                cliente = new Cliente(txtNombreCliente.Text, txtApellidoCliente.Text, auxDni, txtBoxDomicilio.Text, auxContrasenia, desc);
-            
+                KwikEMart.AgregarCliente(new Cliente(txtNombreCliente.Text, txtApellidoCliente.Text, auxDni, txtBoxDomicilio.Text, desc));
+                this.DialogResult = DialogResult.OK;
             }
             else
             {
-                MessageBox.Show("Error en los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); // ver si le pongo algo màs a los paràmetros
+                MessageBox.Show("Error en los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
             }
+            
         }
 
     }

@@ -46,6 +46,7 @@
     <Compile Include="Empleado.cs" />
     <Compile Include="Enumerados.cs" />
     <Compile Include="ItemProducto.cs" />
+    <Compile Include="KwikEMart.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

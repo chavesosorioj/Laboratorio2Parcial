@@ -8,17 +8,17 @@ namespace Entidades
 {
     public class Empleado: Persona
     {
-        
+
         #region Atributos
-        public EPuesto puesto;
+        public int idEmpleado;
         #endregion
 
         #region Propiedades
 
-        public EPuesto Puesto
+        public int Id
         {
-            get { return puesto; }
-            set { puesto = value; }
+            get { return this.idEmpleado; }
+            set { this.idEmpleado = value; }
         }
         #endregion
 
@@ -31,9 +31,9 @@ namespace Entidades
         /// <param name="dni"></param>
         /// <param name="idEmpl"></param>
         /// <param name="puesto"></param>
-        public Empleado(string nombre, string apellido, int dni, EPuesto puesto):base(nombre,apellido,dni) 
+        public Empleado(string nombre, string apellido, int dni, int id):base(nombre,apellido,dni) 
         {
-             this.puesto = puesto;
+            this.idEmpleado = id;
         }
         #endregion
 
@@ -43,10 +43,43 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.Mostrar());
-            sb.AppendLine(this.puesto.ToString()); // CHEQUEAR SI ESTA BIEN. creo que me devuelve el num
-
+            sb.AppendLine(this.idEmpleado.ToString());
             return sb.ToString();
         }
+        #endregion
+
+        #region Sobrecarga operadores
+
+        public static bool operator +(List<Empleado> listaEmpleados, Empleado empleado)
+        {
+            bool ret = false;
+            if(empleado is Empleado)
+            {
+                listaEmpleados.Add(empleado);
+                ret = true;
+            }
+            return ret;
+        }
+
+        public static bool operator ==(List<Empleado> listaEmpleados, Empleado empleado)
+        {
+            bool ret = false;
+            foreach (Empleado item in listaEmpleados)
+            {
+                if (item.dni == empleado.dni)
+                {
+                    ret = true;
+                    break;
+                }
+            }
+            return ret;
+        }
+
+        public static bool operator !=(List<Empleado> listaEmpleados, Empleado empleado)
+        {
+            return !(listaEmpleados == empleado);
+        }
+
         #endregion
     }
 }

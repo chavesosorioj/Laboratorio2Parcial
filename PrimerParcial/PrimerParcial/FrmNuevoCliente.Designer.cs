@@ -31,22 +31,20 @@
             this.BtnAceptar = new System.Windows.Forms.Button();
             this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.txtDniCliente = new System.Windows.Forms.TextBox();
-            this.txtContraseñaCliente = new System.Windows.Forms.TextBox();
             this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.txtBoxDomicilio = new System.Windows.Forms.TextBox();
             this.lblNombreCliente = new System.Windows.Forms.Label();
             this.lblApellidoCliente = new System.Windows.Forms.Label();
             this.lblDniCliente = new System.Windows.Forms.Label();
             this.lblDomicilio = new System.Windows.Forms.Label();
-            this.lblContraseniaCliente = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnAceptar
             // 
-            this.BtnAceptar.Location = new System.Drawing.Point(101, 258);
+            this.BtnAceptar.Location = new System.Drawing.Point(91, 230);
             this.BtnAceptar.Name = "BtnAceptar";
             this.BtnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.BtnAceptar.TabIndex = 0;
+            this.BtnAceptar.TabIndex = 5;
             this.BtnAceptar.Text = "Aceptar";
             this.BtnAceptar.UseVisualStyleBackColor = true;
             this.BtnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
@@ -57,35 +55,28 @@
             this.txtNombreCliente.Location = new System.Drawing.Point(66, 46);
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.Size = new System.Drawing.Size(139, 20);
-            this.txtNombreCliente.TabIndex = 2;
+            this.txtNombreCliente.TabIndex = 0;
             // 
             // txtDniCliente
             // 
             this.txtDniCliente.Location = new System.Drawing.Point(66, 135);
             this.txtDniCliente.Name = "txtDniCliente";
             this.txtDniCliente.Size = new System.Drawing.Size(139, 20);
-            this.txtDniCliente.TabIndex = 3;
-            // 
-            // txtContraseñaCliente
-            // 
-            this.txtContraseñaCliente.Location = new System.Drawing.Point(66, 222);
-            this.txtContraseñaCliente.Name = "txtContraseñaCliente";
-            this.txtContraseñaCliente.Size = new System.Drawing.Size(139, 20);
-            this.txtContraseñaCliente.TabIndex = 4;
+            this.txtDniCliente.TabIndex = 2;
             // 
             // txtApellidoCliente
             // 
             this.txtApellidoCliente.Location = new System.Drawing.Point(66, 89);
             this.txtApellidoCliente.Name = "txtApellidoCliente";
             this.txtApellidoCliente.Size = new System.Drawing.Size(139, 20);
-            this.txtApellidoCliente.TabIndex = 5;
+            this.txtApellidoCliente.TabIndex = 1;
             // 
             // txtBoxDomicilio
             // 
             this.txtBoxDomicilio.Location = new System.Drawing.Point(66, 178);
             this.txtBoxDomicilio.Name = "txtBoxDomicilio";
             this.txtBoxDomicilio.Size = new System.Drawing.Size(139, 20);
-            this.txtBoxDomicilio.TabIndex = 6;
+            this.txtBoxDomicilio.TabIndex = 3;
             // 
             // lblNombreCliente
             // 
@@ -131,32 +122,18 @@
             this.lblDomicilio.TabIndex = 10;
             this.lblDomicilio.Text = "Domicilio";
             // 
-            // lblContraseniaCliente
-            // 
-            this.lblContraseniaCliente.AutoSize = true;
-            this.lblContraseniaCliente.BackColor = System.Drawing.Color.Transparent;
-            this.lblContraseniaCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseniaCliente.Location = new System.Drawing.Point(63, 206);
-            this.lblContraseniaCliente.Name = "lblContraseniaCliente";
-            this.lblContraseniaCliente.Size = new System.Drawing.Size(74, 13);
-            this.lblContraseniaCliente.TabIndex = 11;
-            this.lblContraseniaCliente.Text = "Contrasenia";
-            // 
             // FrmNuevoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.BackgroundImage = global::PrimerParcial.Properties.Resources.kwik;
-            this.ClientSize = new System.Drawing.Size(260, 326);
-            this.Controls.Add(this.lblContraseniaCliente);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(272, 265);
             this.Controls.Add(this.lblDomicilio);
             this.Controls.Add(this.lblDniCliente);
             this.Controls.Add(this.lblApellidoCliente);
             this.Controls.Add(this.lblNombreCliente);
             this.Controls.Add(this.txtBoxDomicilio);
             this.Controls.Add(this.txtApellidoCliente);
-            this.Controls.Add(this.txtContraseñaCliente);
             this.Controls.Add(this.txtDniCliente);
             this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.BtnAceptar);
@@ -177,13 +154,11 @@
         private System.Windows.Forms.Button BtnAceptar;
         private System.Windows.Forms.TextBox txtNombreCliente;
         private System.Windows.Forms.TextBox txtDniCliente;
-        private System.Windows.Forms.TextBox txtContraseñaCliente;
         private System.Windows.Forms.TextBox txtApellidoCliente;
         private System.Windows.Forms.TextBox txtBoxDomicilio;
         private System.Windows.Forms.Label lblNombreCliente;
         private System.Windows.Forms.Label lblApellidoCliente;
         private System.Windows.Forms.Label lblDniCliente;
         private System.Windows.Forms.Label lblDomicilio;
-        private System.Windows.Forms.Label lblContraseniaCliente;
     }
 }

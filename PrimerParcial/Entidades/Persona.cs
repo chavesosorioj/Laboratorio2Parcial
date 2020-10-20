@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public abstract class Persona // es la base
+    public abstract class Persona 
     {
         #region Atributos
         protected string nombre;
@@ -19,19 +19,19 @@ namespace Entidades
         public string Nombre 
         {
             get { return nombre; }
-            set { nombre = value;}
-        }
+            set { nombre = value; }
+         }
 
         public string Apellido
         {
             get { return apellido; }
-            set { apellido = value; }
+         //   set { apellido = value; }
         }
 
         public int Dni 
         {
             get { return dni; }
-            set { dni = value; }
+          //  set { dni = value; }
         }
         #endregion 
         #region Constructor
@@ -69,6 +69,7 @@ namespace Entidades
             return sb.ToString();
         }
         #endregion
+
 
     }
 }
